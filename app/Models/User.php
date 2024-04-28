@@ -20,6 +20,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role'
+    ];
+    protected $primaryKey = 'user_id';
+    protected $attributes = [
+        'role' => 'user'
     ];
 
     /**

@@ -8,7 +8,6 @@ use App\Models\Tasks;
 
 class TaskController extends Controller
 {
-    //
     public function create(Request $request) {
         try {
             $request->validate([
@@ -25,6 +24,5 @@ class TaskController extends Controller
         } catch(\Exception $error) {
             return response()->json(['error' => $error->getMessage()], 500);
         }
-        die('in create');
     }
 }
